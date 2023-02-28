@@ -22,5 +22,13 @@ public class Main {
         System.out.println("Unsorted list: " + unsortedList);
         System.out.println("--------------------------------------");
         System.out.println("Sorted list: " + new IDateSorterImpl().sortDates(unsortedList));
+
+        /*
+            Result:
+                Unsorted list: [2002-06-28, 2002-10-16, 2002-02-12, 2002-08-20, 2002-09-24, 2002-07-01, 2002-10-05, 2002-05-09, 2002-01-08]
+                --------------------------------------
+                Sorted list: [2002-01-08, 2002-02-12, 2002-09-24, 2002-10-05, 2002-10-16, 2002-08-20, 2002-07-01, 2002-06-28, 2002-05-09]
+         */
     }
 }
+
