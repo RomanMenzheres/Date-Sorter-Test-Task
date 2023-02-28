@@ -8,7 +8,7 @@ public class Main {
 
         List<LocalDate> unsortedList = new ArrayList<>(); //List with dates
 
-        unsortedList.add(LocalDate.of(2002, Month.JUNE, 28));  //Filling dates in list
+        unsortedList.add(LocalDate.of(2002, Month.JUNE, 28));  //Filling in the list with dates
         unsortedList.add(LocalDate.of(2002, Month.OCTOBER, 16));
         unsortedList.add(LocalDate.of(2002, Month.FEBRUARY, 12));
         unsortedList.add(LocalDate.of(2002, Month.AUGUST, 20));
@@ -19,13 +19,8 @@ public class Main {
         unsortedList.add(LocalDate.of(2002, Month.JANUARY, 8));
 
         //Printing lists
-
         System.out.println("Unsorted list: " + unsortedList);
         System.out.println("--------------------------------------");
-        System.out.println("Sorted list according to month with letter 'R': "
-                + new IDateSorterImpl1().sortDates(unsortedList));
-        System.out.println("--------------------------------------");
-        System.out.println("Sorted list according to month without letter 'R': "
-                + new IDateSorterImpl2().sortDates(unsortedList));
+        System.out.println("Sorted list: " + new IDateSorterImpl().sortDates(unsortedList));
     }
 }
